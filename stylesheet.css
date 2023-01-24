@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(246, 239, 229);
+    background-image: url("images/paper-texture.jpeg");
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3 {
+    color: rgb(198, 78, 41);
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+}
+
+nav, p {
+    font-family: 'Nunito', sans-serif;
+    line-height: 150%;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: overline;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+a:link {
+    color: rgb(41, 172, 198);
+}
+
+a:visited {
+    color:rgb(198, 78, 41);
+}
+
+a:hover {
+    color: rgb(148, 16, 16);
+}
+
+img {
+    width: 50%;
+    height: 100%;
+}

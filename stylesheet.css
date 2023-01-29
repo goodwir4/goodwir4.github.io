@@ -1,25 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 80%;
+    margin: auto;
+}
+
 body {
     background-color: rgb(246, 239, 229);
     background-image: url("images/paper-texture.jpeg");
     background-repeat: no-repeat;
 }
 
-h1, h2, h3 {
+header {
+    width: 100%;
+    margin: 1%;
+    padding: 3%;
+}
+
+#kitty {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    z-index: -1;
+}
+
+h1 {
+    color: rgb(198, 78, 41);
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5em;
+}
+
+h2, h3 {
     color: rgb(198, 78, 41);
     font-family: 'Roboto Slab', serif;
     font-size: 1.5em;
 }
 
-nav, p {
+nav {
     font-family: 'Nunito', sans-serif;
     line-height: 150%;
+    width: 100%;
+    margin: 1%;
+    padding: 3%;
+    background-color: rgb(242, 235, 227);
 }
 
 ul {
     list-style-type: none;
     text-decoration: overline;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
+}
+
+.nav li{
+    display: inline;
+    padding: 2%;
 }
 
 a:link {
@@ -34,7 +72,100 @@ a:hover {
     color: rgb(148, 16, 16);
 }
 
-img {
+p {
+    font-family: 'Nunito', sans-serif;
+    line-height: 150%;
+}
+
+#bio {
+    background-color: rgb(232, 193, 96);
+    overflow: auto;
+    padding: 1%;
+    margin: 1%;
+}
+
+#me {
     width: 50%;
     height: 100%;
+    margin: 1%;
+}
+
+#smile {
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+#smile-icon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5%;
+    height: auto;
+}
+
+.columns {
+    float: left;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+    background-color: rgb(216, 214, 219);
+    padding: 1%;
+    margin: 1%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+    background-color: rgb(106, 152, 239);
+    clear: left;
+    padding: 1%;
+    margin: 1%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    margin: 1%;
+    padding: 3%;
+    background-color: rgb(213, 236, 236);
 }

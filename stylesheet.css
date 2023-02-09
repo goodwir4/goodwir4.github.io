@@ -78,6 +78,7 @@ p {
 }
 
 #bio {
+    width: 50%;
     background-color: rgb(232, 193, 96);
     overflow: auto;
     padding: 1%;
@@ -169,3 +170,14 @@ footer {
     padding: 3%;
     background-color: rgb(213, 236, 236);
 }
+
+@media only screen and (max-width: 800px) {
+    #bio {
+        width: 100%;
+        margin: auto;
+        }
+
+    #me {
+        width: 100%;
+    }
+} 

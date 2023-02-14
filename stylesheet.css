@@ -174,7 +174,8 @@ footer {
 @media only screen and (max-width: 800px) {
     #bio {
         width: 100%;
-        margin: auto;
+        float: left;
+        margin: 0%;
         background-color: rgb(197, 227, 198);
         }
 

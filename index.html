@@ -3,72 +3,175 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="stylesheet.css" type="text/css" rel="stylesheet">
+
+    <!--CSS links-->
+
+    <link href="normalize.css" type="text/css" rel="stylesheet">
+    <link href="skeleton.css" type="text/css" rel="stylesheet">
+    <link href="sandboxbio.css" type="text/css" rel="stylesheet">
+
+    <!--Google Fonts Links-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet">
+    
     <title>Goodwin DSGN 360</title>
+
 </head>
 
-<body>
+<body class="container">
 
-    <div id="wrapper">
+        <header class="row">
 
-        <header>
-            <h1>DSGN 360: Robin Goodwin</h1>
-            <img id="kitty" src="images/kitten-icon.png">
-            <h2>Winter 2023</h2>
+            <div class="twelve columns">
+
+                <h1 id="SiteTitle">DSGN 360: Robin Goodwin</h1>
+
+                <h5>Winter 2023</h5>
+
+                <nav>
+                    <ul>
+                        <li class="button button-primary"><a id="nav-link" href="https://www.figma.com/proto/gwBkYNaf04aa0U78pGgD1S/Woof-River-Desktop?page-id=0%3A1&node-id=1%3A168&viewport=576%2C633%2C0.25&scaling=scale-down&starting-point-node-id=1%3A236" target="_blank">Project 1 Desktop</a></li>
+                        <li class="button button-primary"><a id="nav-link" href="https://www.figma.com/proto/KPUA4YyW5zwCMNo6YhhIga/Woof-River-Mobile?page-id=0%3A1&node-id=14%3A17&viewport=42%2C1411%2C0.33&scaling=scale-down&starting-point-node-id=14%3A17&show-proto-sidebar=1" target="_blank">Project 1 Mobile</a></li>
+                        <li class="button button-primary"><a id="nav-link" href="woof-river-case-study.pdf" target="_blank">Project 1 Process</a></li>
+                        <li class="button button-primary"><a id="nav-link" href=”#”>Project 2</a></li>
+                        <li class="button button-primary"><a id="nav-link" href=”#”>Project 2 Process</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
         </header>
 
-        <nav>
-            <ul class="nav">
-                <li><a href="https://www.figma.com/proto/gwBkYNaf04aa0U78pGgD1S/Woof-River-Desktop?page-id=0%3A1&node-id=1%3A168&viewport=576%2C633%2C0.25&scaling=scale-down&starting-point-node-id=1%3A236" target="_blank">Project 1 Desktop</a></li>
-                <li><a href="https://www.figma.com/proto/KPUA4YyW5zwCMNo6YhhIga/Woof-River-Mobile?page-id=0%3A1&node-id=14%3A17&viewport=42%2C1411%2C0.33&scaling=scale-down&starting-point-node-id=14%3A17&show-proto-sidebar=1" target="_blank">Project 1 Mobile</a></li>
-                <li><a href="woof-river-case-study.pdf" target="_blank">Project 1 Process</a></li>
-                <li><a href=”#”>Project 2</a></li>
-                <li><a href=”#”>Project 2 Process</a></li>
-            </ul>
-        </nav>
+        <article class="row">
 
-        <article>
-            <h3>About Me</h3>
-            <div id="bio">
-                <p>Hello! My name is Robin Goodwin, and I'm enrolled in Western Washington University's Design Program. I was born in Memphis, TN, and I have been living in the Seattle area since I was about 19 years old. Currently, my partner, Ryan, and I are living in a small, detached apartment behind a duplex in Shoreline. My sister, Acacia, and my brother-in-law, Richard, live in one half of the duplex, while my mother occupies the other half of the duplex. It’s not as crappy as it sounds. When I’m not in school, I enjoy sleeping, napping, petting my cat (Macaroni), petting my mom’s cat (Jinx), interrupting Acacia’s Zoom meetings, spending time with Ryan, eating Indian food, hoarding art supplies, watching television, and sitting quietly. My favorite aspects of design include, but are not limited to: illustration, design and layout for print, and typography (even though I’m not very good at it).</p>
+            <div id="bio-body-text" class="eight columns">
+
+                <h3>About Me</h3>
+
+                <p>
+                    Hello! My name is Robin Goodwin, and I'm enrolled in Western Washington University's Design Program. I was born in Memphis, TN, 
+                    and I have been living in the Seattle area since I was about 19 years old. Currently, my partner, Ryan, and I are living in a 
+                    small, detached apartment behind a duplex in Shoreline. My sister, Acacia, and my brother-in-law, Richard, live in one half of 
+                    the duplex, while my mother occupies the other half of the duplex. It’s not as crappy as it sounds. When I’m not in school, I 
+                    enjoy sleeping, napping, petting my cat (Macaroni), petting my mom’s cat (Jinx), interrupting Acacia’s Zoom meetings, spending 
+                    time with Ryan, eating Indian food, hoarding art supplies, watching television, and sitting quietly. My favorite aspects of 
+                    design include, but are not limited to: illustration, design and layout for print, and typography (even though I’m not very 
+                    good at it).
+                </p>
+                
             </div>
+
+            <div id="bio-pic" class="four columns">
+
+                <img class="u-full-width" src="images/contact-pic.jpg">
+
+            </div>
+
         </article>
 
-        <br>
+        <div class="row">
 
-        <img id="me" src="images/contact-pic.jpg">
+            <div id="three-col-text" class="four columns">
 
-        <br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et cursus felis, nec aliquet risus. Nulla a eleifend sapien. Sed pellentesque
+                    rhoncus tellus a accumsan. Fusce pretium erat enim, non aliquam enim blandit quis. Nulla sed lacinia dui, ac pellentesque urna. Donec 
+                    quis metus ac eros bibendum dignissim. Nunc pellentesque, est vel feugiat aliquam, erat dolor viverra dui, id posuere augue ex molestie 
+                    dolor. In hac habitasse platea dictumst. Nam ut ante sit amet ipsum tincidunt egestas. Donec et purus quis sapien tincidunt convallis. 
+                    Aenean sed pharetra felis, sit amet sollicitudin lacus. In hac habitasse platea dictumst. Etiam sodales viverra nulla vitae tincidunt. 
+                    Curabitur tempor lorem lectus. Nulla eros elit, luctus et orci nec, blandit pellentesque sapien. In molestie tincidunt maximus.
+                </p>
 
-        <div class="columns col-3">
-            <p>Jason eats boogers.</p>
+            </div>
+
+            <div id="three-col-text" class="four columns">
+
+                <p>
+                    Praesent nec congue diam. Ut et aliquam erat. Curabitur iaculis velit ut efficitur commodo. Sed eu ex et risus imperdiet tempor non eu diam. 
+                    Donec dictum turpis eget lorem condimentum, sed feugiat enim mattis. Maecenas blandit dapibus augue, non laoreet purus convallis ullamcorper. 
+                    Quisque fermentum orci sed elit rhoncus pellentesque. Etiam dictum magna velit, at luctus tellus eleifend ac.
+                </p>
+
+            </div>
+
+            <div id="three-col-text" class="four columns">
+
+                <p>
+                    Donec sit amet sodales odio. Nulla vel quam commodo, semper ex in, suscipit arcu. Etiam tempus eleifend libero, non cursus tellus tempor et. 
+                    Duis eleifend augue tellus, ut euismod turpis molestie sit amet. Suspendisse potenti. Fusce sed metus elementum magna feugiat tempor. Suspendisse 
+                    mollis purus in leo hendrerit, at interdum lacus euismod. Pellentesque tincidunt risus sed risus faucibus mattis. Donec ac mattis nisl, et dapibus 
+                    velit. Integer vehicula neque id porttitor aliquet. Proin elementum egestas libero, at aliquam diam finibus at.
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="col-9">
-            <p>Eat the rich.</p>        
+        <div class="row">
+
+            <div class="twelve columns">
+
+                <h3>Fun With Drop-Downs</h3>
+
+            </div>
+
         </div>
 
-        <br>
+        <div class="row">
 
-        <div id="smile">
-            <img id="smile-icon" src="images/smiley-face.png">
+            <div class="four columns">
+
+                <label>I Hate</label>
+                    <select>
+                        <option>Mayo</option>
+                        <option>Sour Cream</option>
+                        <option>Alfredo</option>
+                        <option>All of the Above!</option>
+                    </select>
+
+            </div>
+
+            <div class="four columns">
+           
+                    <label>I Love</label>
+                    <select>
+                        <option>Cats</option>
+                        <option>Iced Coffee</option>
+                        <option>Birds</option>
+                        <option>All of the Above!</option>
+                    </select>
+
+            </div>
+
+            <div class="four columns">
+           
+                <label>I am Indifferent to</label>
+                <select>
+                    <option>Most Things</option>
+                    <option>All of the Above!</option>
+                </select>
+
+            </div>
+            
         </div>
 
         <hr>
 
-        <br>
+        <footer class="row">
 
-        <footer>
-            <p>copyright 2023, <a href="mailto:goodwir4@wwu.edu">goodwir4@wwu.edu</a></p>
+            <div class="twelve columns">
+
+                <p>copyright 2023, <a href="mailto:goodwir4@wwu.edu">goodwir4@wwu.edu</a></p>
+
+            </div>
+
         </footer>
-
-    </div>
 
 </body>
 

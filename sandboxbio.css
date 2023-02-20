@@ -1,0 +1,79 @@
+/* General Styling */
+
+body {
+    background-color: rgb(248, 242, 234);
+}
+
+.row {
+    padding-bottom: 3rem;
+}
+
+/* Header Styling */
+
+header {
+    text-align: center;
+}
+
+#SiteTitle {
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+}
+
+/* Nav Styling */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    padding-right: 1rem;
+    white-space: nowrap;
+}
+
+.button.button-primary {
+    background-color: rgb(61, 61, 61);
+    border-color: rgb(61, 61, 61);
+}
+
+.button.button-primary:hover {
+    background-color: rgb(126, 126, 126);
+    border-color: rgb(126, 126, 126);
+}
+
+#nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Smaller than 900px */
+
+@media (max-width: 900px) {
+
+    #bio-body-text {
+        width: 100%;
+    }
+    
+    #bio-pic {
+        width: 50%;
+        margin-left: 0%;
+    }
+
+    #three-col-text {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+}
+
+/* Drop Down Styling */
+
+select, select:focus {
+    border-color: rgb(126, 126, 126);
+}
+
+/* Footer Styling */
+
+footer {
+    text-align: center;
+}

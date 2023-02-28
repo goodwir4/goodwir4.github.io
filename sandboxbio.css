@@ -46,9 +46,39 @@ li {
     text-decoration: none;
 }
 
+/* CSS animation */
+
+#dumb-dog {
+    width: 5em;
+    height: auto;
+}
+
+#dancing-dog {
+    width: 100px;
+    height: auto;
+    animation-name: dancing-dog;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    }
+
+@keyframes dancing-dog {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+/* CSS transition */
+
+#dumb-dog {
+    transition: width 2s;
+}
+
+#dumb-dog:hover {
+    width: 10em;
+}
+
 /* Smaller than 900px */
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
 
     #bio-body-text {
         width: 100%;

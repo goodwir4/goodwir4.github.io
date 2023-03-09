@@ -67,14 +67,15 @@ h1 {
     text-align: center;
 }
 
-#down-arrow {
+#title-page-down-arrow {
+    float: right;
     width: 4%;
     height: auto;
     align-items: center;
     transition: .5s;
 }
 
-#down-arrow:hover {
+#title-page-down-arrow:hover {
     scale: 120%;
     transition: all 200ms ease;
 }
@@ -92,7 +93,7 @@ p {
     font-size: 1em;
     line-height: 1.3em;
     color: #403E3B;
-  }
+}
   
 p::first-letter {
     float: left;
@@ -101,27 +102,57 @@ p::first-letter {
     font-size: 3em;
     margin: 0 .12em 0 0;
     line-height: 0.86;
-  }
+}
 
-  .hanging-punctuation::first-letter {
+.hanging-punctuation::first-letter {
     margin-left: -.45em;
-  }
+}
 
-  .hanging-punctuation-2::first-letter {
+.hanging-punctuation-2::first-letter {
     margin-left: -.25em;
-  }
+}
 
-  #ugly-drop-cap-on-page-eight::first-letter {
+#ugly-drop-cap-on-page-eight::first-letter {
     margin: 0 .04em 0 0;
-  }
+}
 
-  .img-right {
+.img-right {
     width: 100%;
-  }
+}
 
-  .img-left {
+.img-left {
     width: 100%
-  }
+}
+
+.up-arrow {
+    float: right;
+    width: 8%;
+    height: auto;
+    align-items: center;
+    transition: .5s;
+}
+
+.up-arrow:hover {
+    scale: 120%;
+    transition: all 200ms ease;
+}
+
+.down-arrow {
+    float: left;
+    width: 8%;
+    height: auto;
+    align-items: center;
+    transition: .5s;
+}
+
+.down-arrow:hover {
+    scale: 120%;
+    transition: all 200ms ease;
+}
+
+.nav-buttons {
+    padding-bottom: 5%;
+}
 
 @media screen and (max-width: 550px) {
 
@@ -178,7 +209,7 @@ p::first-letter {
 /*Quotation Styles*/
 
 .big-quote {
-    padding: 25% 0% 25% 0%;
+    padding: 20% 0% 19% 0%;
 }
 
 .brown-quote {

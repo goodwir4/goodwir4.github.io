@@ -585,6 +585,14 @@
 
         </div>
 
+        <script>
+            let element = document.querySelector('.parent #dodo-bird');
+            let observer = new IntersectionObserver(entries => {
+                element.classList.toggle('dodo-bird-animation-data', entries[0].isIntersecting );
+            });
+            observer.observe( element );
+        </script>
+        
     </body>
 
 </html>

@@ -206,6 +206,21 @@ p::first-letter {
     justify-content: center;
 }
 
+.reference-text {
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #403E3B;
+    line-height: 3.2rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #A67232;
+}
+
 /*Quotation Styles*/
 
 .big-quote {

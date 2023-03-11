@@ -1,19 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /*Title Page Styles*/
 
 .wrapper {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;
+    overflow: scroll;*/
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-beige-tp {
+    background-color: #F2EDDC;
+    
 }
 
 .bg-beige {
     background-color: #F2EDDC;
+    background-image: url(images/giant-quotation-mark.svg);
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
 }
 
 .bg-white {
     background-color: #ffffff;
-}
-
-.body-copy-container {
-    padding: 20% 0% 20% 0%;
 }
 
 #title-page {
@@ -23,7 +43,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 6rem;
-    padding: 3% 0% 5% 0%;
+    padding: 10% 0% 5% 0%;
 }
 
 .ws-bold {
@@ -67,30 +87,48 @@ h1 {
     text-align: center;
 }
 
-#title-page-down-arrow {
-    float: right;
-    width: 4%;
-    height: auto;
+button {
+    border-style: none;
+    display: flex;
     align-items: center;
-    transition: .5s;
+    flex-direction: row;
+    justify-content: center;
 }
 
-#title-page-down-arrow:hover {
+.title-down-arrow {
+    width: 9%;
+    height: auto;
+    transition: .5s;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-down-arrow:hover {
     scale: 120%;
     transition: all 200ms ease;
 }
 
 /*Body Copy Styles*/
 
+.text-spacing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0 5rem 0;
+    row-gap: 3rem;
+}
+
 .body-copy-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 p {
     font-family: 'Cormorant Garamond';
-    font-size: 1em;
+    font-size: .93em;
     line-height: 1.3em;
     color: #403E3B;
 }
@@ -126,7 +164,7 @@ p::first-letter {
 
 .up-arrow {
     float: right;
-    width: 8%;
+    width: 9%;
     height: auto;
     align-items: center;
     transition: .5s;
@@ -139,7 +177,7 @@ p::first-letter {
 
 .down-arrow {
     float: left;
-    width: 8%;
+    width: 9%;
     height: auto;
     align-items: center;
     transition: .5s;
@@ -150,66 +188,33 @@ p::first-letter {
     transition: all 200ms ease;
 }
 
-.nav-buttons {
-    padding-bottom: 5%;
+#back-to-top {
+    float: left;
+    width: 26%;
+    height: auto;
+    transition: .5s;
 }
 
-@media screen and (max-width: 550px) {
+#back-to-top:hover {
+    scale: 120%;
+    transition: all 200ms ease;
+}
 
-    #title-page {
-        gap: 4rem;
-    }
-
-    .ws-bold {
-        font-size: 2rem;
-        line-height: 2.2rem;
-    }
-
-    .cg-italic-small {
-        font-size: 2rem;
-        line-height: 2.2rem;
-    }
-
-    h1 {
-        font-size: 10rem;
-        line-height: 10rem;
-    }
-
-    #article-subtitle {
-        font-size: 2.5rem;
-        line-height: 2rem;
-        }
-
-    .body-copy-container {
-        flex-direction: column;
-    }
-
-    #flex-reverse {
-        flex-direction: column-reverse;
-    }
-
-    #body-text {
-        padding-top: 3%;
-    }
-
-    #down-arrow {
-        width: 8%;
-        height: auto;
-        align-items: center;
-        transition: .5s;
-    }
-    
-    #down-arrow:hover {
-        scale: 120%;
-        transition: all 200ms ease;
-    }
-
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Quotation Styles*/
 
 .big-quote {
-    padding: 20% 0% 19% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5rem;
+    padding-top: 5rem;
 }
 
 .brown-quote {
@@ -243,30 +248,154 @@ p::first-letter {
 }
 
 #too-big {
-    font-size: 8rem;
-    line-height: 8rem;
+    font-size: 7.2rem;
+    line-height: 7.2rem;
 }
 
-@media screen and (max-width: 550px) {
+/*Dodo Animation*/
+
+
+.parent {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.gray-background {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#page11 {
+    scroll-timeline-name: page11;
+}
+
+@keyframes disappearing-dodo {
+
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      display: none;
+      opacity: 0;
+    }
+
+}
+
+#dodo-bird {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    animation-name: disappearing-dodo;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/*Media Query*/
+
+@media screen and (max-width: 800px) {
+    .six.columns {
+        width: 80%;
+    }
+}
+    
+@media screen and (max-width: 600px) {
+
+    /*Quotes*/
+
+    .big-quote {
+        margin: 8rem 0rem 0rem 0rem;
+    }
 
     .brown-quote {
-        font-size: 10rem;
-        line-height: 10rem;
+        font-size: 6rem;
+        line-height: 6rem;
     }
 
     .green-highlight {
-        font-size: 10rem;
-        line-height: 10rem;
+        font-size: 6rem;
+        line-height: 6rem;
     }
 
     .blue-quote {
-        font-size: 10rem;
-        line-height: 10rem;
+        font-size: 6rem;
+        line-height: 6rem;
     }
 
     #too-big {
-        font-size: 6rem;
-        line-height: 6rem;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    /*Body*/
+
+    .text-spacing {
+        row-gap: 3rem;
+    }
+
+    .img-right {
+        scale: 100%
+    }
+
+    .img-left {
+        scale: 100%
+    }
+
+    #title-page {
+        gap: 4rem;
+    }
+
+    .ws-bold {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .cg-italic-small {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    h1 {
+        font-size: 9rem;
+        line-height: 9rem;
+    }
+
+    #article-subtitle {
+        font-size: 2.5rem;
+        line-height: 2rem;
+        }
+
+    .body-copy-container {
+        flex-direction: column;
+    }
+
+    #flex-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .title-down-arrow {
+        width: 11%;
+    }
+
+    .down-arrow {
+        width: 15%;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+
+    .up-arrow {
+        width: 15%;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+
+    #back-to-top {
+        width: 45%;
+        padding: 0rem 1rem 0rem 1rem;
     }
 
 }
